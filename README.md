@@ -46,4 +46,8 @@
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone <URL>
+   git clone https://github.com/Yahyobek1353/Emerix.git
+2. Запустите базу хранения текстров
+   ```bash
+   python app.py
+3. Вы запустили программу
