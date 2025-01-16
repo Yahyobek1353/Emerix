@@ -1,0 +1,127 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #388E3C;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Основные секции */
+main {
+    padding: 40px 0;
+}
+
+.hero {
+    background: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.safety-info {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.safety-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #4CAF50;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 5px;
+}
+
+.safety-info h4 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #388E3C;
+}
+
+.safety-info ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.safety-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.safety-info p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}

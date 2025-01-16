@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerix - Твой помощник безопасности</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Функция для смены языка
+        function changeLanguage(language) {
+            fetch(`http://127.0.0.1:5000/translations?lang=${language}`)
+                .then(response => response.json())  // Ожидаем JSON от сервера
+                .then(data => {
+                    // Обновляем текст на странице
+                    document.getElementById("hero-title").innerText = data.hero_title;
+                    document.getElementById("hero-description").innerText = data.hero_description;
+                    document.getElementById("btn-sos").innerText = data.button_sos;
+                    document.getElementById("features-title").innerText = data.features_title;
+                    document.getElementById("feature-quick-sos").innerText = data.feature_quick_sos;
+                    document.getElementById("feature-quick-sos-description").innerText = data.feature_quick_sos_description;
+                    document.getElementById("feature-contacts").innerText = data.feature_contacts;
+                    document.getElementById("feature-contacts-description").innerText = data.feature_contacts_description;
+                    document.getElementById("feature-reliable").innerText = data.feature_reliable;
+                    document.getElementById("feature-reliable-description").innerText = data.feature_reliable_description;
+                    document.getElementById("footer-text").innerText = data.footer_text;
+                })
+                .catch(error => console.error('Error:', error));  // Логируем ошибку, если она возникнет
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Emerix</h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="sos.php">Форма SOS</a></li>
+                    <li><a href="safety.html">Безопасность</a></li>
+                    <li><a href="contact.php">Контакты</a></li>
+                    <li><a href="about.php">О Нас</a></li>
+                </ul>
+            </nav>
+            <div class="language-buttons">
+                <a href="javascript:void(0);" onclick="changeLanguage('ru')">RU</a>
+                <a href="javascript:void(0);" onclick="changeLanguage('kg')">KG</a>
+                <a href="javascript:void(0);" onclick="changeLanguage('en')">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 id="hero-title">Ваша безопасность – наш приоритет</h2>
+                <p id="hero-description">Emerix помогает вам оставаться в безопасности в чрезвычайных ситуациях с помощью простой системы SOS, контактов для экстренных случаев и многого другого.</p>
+                <a href="sos.php" id="btn-sos" class="btn">Отправить SOS</a>
+            </div>
+        </section>
+
+
+        <section class="safety-gallery">
+            <div class="container">
+                <h3>Советы по безопасности</h3>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/fire-safety.jpg" alt="Пожарная безопасность">
+                        <p>Пожарная безопасность: Убедитесь, что в вашем доме есть работающие детекторы дыма.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/road-safety.jpg" alt="Дорожная безопасность">
+                        <p>Дорожная безопасность: Всегда соблюдайте правила дорожного движения.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/online-safety.jpg" alt="Онлайн безопасность">
+                        <p>Онлайн безопасность: Используйте сложные пароли и не делитесь личной информацией.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/first-aid.jpg" alt="Первая помощь">
+                        <p>Первая помощь: Знание основ может спасти жизнь.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3 id="features-title">Почему именно Emerix?</h3>
+                <div class="feature">
+                    <h4 id="feature-quick-sos">Быстрая помощь</h4>
+                    <p id="feature-quick-sos-description">Отправьте экстренное оповещение одним щелчком.</p>
+                </div>
+                <div class="feature">
+                    <h4 id="feature-contacts">Экстренные контакты</h4>
+                    <p id="feature-contacts-description">Получите мгновенный доступ к важным номерам.</p>
+                </div>
+                <div class="feature">
+                    <h4 id="feature-reliable">Надежность</h4>
+                    <p id="feature-reliable-description">Доступно 24/7 для вашего спокойствия.</p>
+                </div>
+                <div class="feature">
+                    <h4 id="feature-safety">Инструкции</h4>
+                    <p id="feature-safety-description">В разделе Безопасность есть вся нужная информация на любые ситуации</p>
+                </div>
+                <div class="feature">
+                    <h4 id="feature-observation">Наблюдение за близкими</h4>
+                    <p id="feature-observation-description">Система безопасности родных в разделе Безопасность</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="footer-text">&copy; 2025 Emerix. Оператор безопасности от Мээрим г.Ош by SALIEV</p>
+        </div>
+    </footer>
+</body>
+</html>
