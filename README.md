@@ -56,3 +56,9 @@
    ```bash
    start main.html
 4. Готово теперь вы можете улучшать проект Emerix
+
+
+
+## 🔗 Ссылки
+[![Telegram](https://img.shields.io/badge/Telegram-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://t.me/salievyt)
+[![whatsapp](https://img.shields.io/badge/whatsapp-darc_green?style=for-the-badge&logo=twitter&logoColor=white)](https://api.whatsapp.com/send?phone=996990055445)
