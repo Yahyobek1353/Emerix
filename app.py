@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # app.py
 from flask import Flask, jsonify, request
 from translations import get_translation
@@ -13,7 +13,6 @@ def translations():
 
 if __name__ == '__main__':
     app.run(debug=True)
-=======
 # app.py
 from flask import Flask, jsonify, request
 from translations import get_translation
@@ -28,4 +27,3 @@ def translations():
 
 if __name__ == '__main__':
     app.run(debug=True)
->>>>>>> 767ef77e7cbd841ff269b6c9e284345e8a6d4c40

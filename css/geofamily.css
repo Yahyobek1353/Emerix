@@ -1,0 +1,141 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Карта */
+.map-container {
+    margin: 20px 0;
+    padding: 10px;
+    height: 250px;
+    background-color: #d9eaf7;
+    border: 1px solid #c1d6e8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Блок действий */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.actions button.delete {
+    background-color: #dc3545;
+}
+
+/* Список близких */
+.contacts {
+    margin-bottom: 20px;
+}
+
+.contacts .contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.contacts .contact-info {
+    flex: 1;
+}
+
+.contacts .contact-info .name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.contacts .contact-info .phone {
+    font-size: 13px;
+    color: #666;
+}
+
+.contacts .contact-actions button {
+    padding: 8px 12px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.contacts .contact-actions .send {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.contacts .contact-actions .remove {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Добавить нового */
+.add-relative {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-relative input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-relative button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+    font-size: 12px;
+}

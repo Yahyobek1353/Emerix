@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Родные</title>
+    <link rel="stylesheet" href="css/geofamily.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мои Родные</h1>
+        <div class="map-container">
+            Здесь будет отображаться карта
+        </div>
+
+        <div class="actions">
+            <button onclick="location.href='main.html';">На Главную</button>
+            <button onclick="sendLocation()">Отправить местоположение</button>
+        </div>
+
+        <div class="contacts">
+            <h2>Список Близких</h2>
+            <div class="contact-item">
+                <div class="contact-info">
+                    <div class="name">Имя: Иван</div>
+                    <div class="phone">Телефон: +7 123 456 78 90</div>
+                </div>
+                <div class="contact-actions">
+                    <button class="send">Отправить</button>
+                    <button class="remove">Удалить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-relative">
+            <input type="text" placeholder="Имя" id="name">
+            <input type="text" placeholder="Номер телефона" id="phone">
+            <button onclick="addRelative()">Добавить</button>
+        </div>
+
+        <footer>© 2025 Мои Родные</footer>
+    </div>
+
+    <script>
+        function sendLocation() {
+            alert('Ваше местоположение отправлено!');
+        }
+
+        function addRelative() {
+            const name = document.getElementById('name').value; 
+            const phone = document.getElementById('phone').value;
+            if (name && phone) {
+                alert(`Добавлен близкий: ${name}, телефон: ${phone}`);
+            } else {
+                alert('Заполните все поля!');
+            }
+        }
+    </script>
+</body>
+</html>
