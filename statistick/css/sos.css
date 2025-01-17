@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #d9534f;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.sos-actions {
+    margin: 20px 0;
+}
+
+.sos-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sos-button:hover {
+    background-color: #c9302c;
+}
+
+.contacts {
+    margin: 20px 0;
+}
+
+.contacts h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#contacts-list {
+    list-style: none;
+    padding: 0;
+}
+
+#contacts-list li {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.onFooter {
+    margin-top: 20px;
+}
+
+.onFooter button {
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.onFooter button:hover {
+    background-color: #286090;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 4px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}

@@ -1,29 +1,33 @@
-
-# app.py
 from flask import Flask, jsonify, request
-from translations import get_translation
+import json
 
 app = Flask(__name__)
 
-@app.route('/translations')
-def translations():
-    lang = request.args.get('lang', 'en')  # Получаем язык из параметра запроса
-    translation = get_translation(lang)  # Получаем переводы для выбранного языка
-    return jsonify(translation)  # Отправляем переводы в формате JSON
+# Загрузка данных из JSON-файлов
+with open("translations.json", "r", encoding="utf-8") as file:
+    translations = json.load(file)
 
-if __name__ == '__main__':
-    app.run(debug=True)
-# app.py
-from flask import Flask, jsonify, request
-from translations import get_translation
+with open("contacts.json", "r", encoding="utf-8") as file:
+    contacts = json.load(file)
 
-app = Flask(__name__)
 
-@app.route('/translations')
-def translations():
-    lang = request.args.get('lang', 'en')  # Получаем язык из параметра запроса
-    translation = get_translation(lang)  # Получаем переводы для выбранного языка
-    return jsonify(translation)  # Отправляем переводы в формате JSON
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify(translations)
 
-if __name__ == '__main__':
+# API для смены языка
+@app.route("/translations", methods=["GET"])
+def get_translations():
+    lang = request.args.get("lang", "ru")
+    if lang in translations:
+        return jsonify(translations[lang])
+    else:
+        return jsonify({"error": "Language not supported"}), 400
+
+# API для получения контактов экстренных служб
+@app.route("/contacts", methods=["GET"])
+def get_contacts():
+    return jsonify(contacts)
+
+if __name__ == "__main__":
     app.run(debug=True)

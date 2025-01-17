@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Сигнал</title>
+    <link rel="stylesheet" href="/statistick/css/sos.css">
+    <link rel="icon" href="/statistick/images/logo.jpg" type="image/png">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="/statistick/js/sos.js" defer></script> <!-- Подключение sos.js -->
+</head>
+<body>
+    <div class="container">
+        <h1>SOS Сигнал</h1>
+        
+        <div id="map" class="map-container">
+            Загрузка карты...
+        </div>
+
+        <div class="sos-actions">
+            <button class="sos-button" onclick="sendSOS()">Отправить SOS</button>
+        </div>
+
+        <div class="contacts">
+            <h2>Контакты для SOS</h2>
+            <ul id="contacts-list"></ul>
+        </div>
+
+        <div class="onFooter">
+            <button onclick="location.href='geofamily.html';" class="b1">Назад к Мои Родные</button>
+            <button onclick="location.href='main.html';" class="b1">На Главную</button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p id="footer-text">&copy; 2025 Emerix. Оператор безопасности от Мээрим г.Ош by SALIEV</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -4,29 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerix - Твой помощник безопасности</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        // Функция для смены языка
-        function changeLanguage(language) {
-            fetch(`http://127.0.0.1:5000/translations?lang=${language}`)
-                .then(response => response.json())  // Ожидаем JSON от сервера
-                .then(data => {
-                    // Обновляем текст на странице
-                    document.getElementById("hero-title").innerText = data.hero_title;
-                    document.getElementById("hero-description").innerText = data.hero_description;
-                    document.getElementById("btn-sos").innerText = data.button_sos;
-                    document.getElementById("features-title").innerText = data.features_title;
-                    document.getElementById("feature-quick-sos").innerText = data.feature_quick_sos;
-                    document.getElementById("feature-quick-sos-description").innerText = data.feature_quick_sos_description;
-                    document.getElementById("feature-contacts").innerText = data.feature_contacts;
-                    document.getElementById("feature-contacts-description").innerText = data.feature_contacts_description;
-                    document.getElementById("feature-reliable").innerText = data.feature_reliable;
-                    document.getElementById("feature-reliable-description").innerText = data.feature_reliable_description;
-                    document.getElementById("footer-text").innerText = data.footer_text;
-                })
-                .catch(error => console.error('Error:', error));  // Логируем ошибку, если она возникнет
-        }
-    </script>
+    <link rel="icon" href="/statistick/images/logo.jpg" type="image/png">
+    <link rel="stylesheet" href="/statistick/css/styles.css">
+    <script src="/statistick/js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -54,29 +34,28 @@
             <div class="container">
                 <h2 id="hero-title">Ваша безопасность – наш приоритет</h2>
                 <p id="hero-description">Emerix помогает вам оставаться в безопасности в чрезвычайных ситуациях с помощью простой системы SOS, контактов для экстренных случаев и многого другого.</p>
-                <a href="sos.php" id="btn-sos" class="btn">Отправить SOS</a>
+                <a href="/templates/sos.html" id="btn-sos" class="btn">Отправить SOS</a>
             </div>
         </section>
-
 
         <section class="safety-gallery">
             <div class="container">
                 <h3>Советы по безопасности</h3>
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="images/fire-safety.jpg" alt="Пожарная безопасность">
+                        <img src="/statistick/images/fire-safety.jpg" alt="Пожарная безопасность">
                         <p>Пожарная безопасность: Убедитесь, что в вашем доме есть работающие детекторы дыма.</p>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/road-safety.jpg" alt="Дорожная безопасность">
+                        <img src="/statistick/images/road-safety.jpg" alt="Дорожная безопасность">
                         <p>Дорожная безопасность: Всегда соблюдайте правила дорожного движения.</p>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/online-safety.jpg" alt="Онлайн безопасность">
+                        <img src="/statistick/images/online-safety.jpg" alt="Онлайн безопасность">
                         <p>Онлайн безопасность: Используйте сложные пароли и не делитесь личной информацией.</p>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/first-aid.jpg" alt="Первая помощь">
+                        <img src="/statistick/images/first-aid.jpg" alt="Первая помощь">
                         <p>Первая помощь: Знание основ может спасти жизнь.</p>
                     </div>
                 </div>
