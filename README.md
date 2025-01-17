@@ -67,3 +67,10 @@
 
 Для получения поддержки отправьте письмо боту Телеграгм адресу [@emerix_support_bot](https://t.me/emerix_support_bot) или присоединяйтесь к нашему каналу [Emerix](https://t.me/emerix_org).
 
+
+
+## Авторы
+
+- Главный разработчик [SalievYT](https://t.me/salievyt)
+- Руководитель [KaldybaevNurlan](https://api.whatsapp.com/send?phone=996773719301)
+
