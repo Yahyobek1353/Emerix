@@ -63,6 +63,26 @@ main {
     margin-bottom: 30px;
 }
 
+.account-button {
+    position: absolute;
+    top: 105px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #388E3C;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #388E3C;
+}
+
+.account-button:hover {
+    background-color: #388E3C;
+    color: white;
+    text-decoration: underline;
+}
+
 .hero h2 {
     font-size: 2em;
     margin-bottom: 10px;
