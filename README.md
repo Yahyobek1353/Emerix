@@ -65,5 +65,5 @@
 
 ## Support
 
-Для получения поддержки отправьте письмо боту Телеграгм адресу @emerix_support_bot или присоединяйтесь к нашему каналу [Emerix](https://t.me/emerix_org).
+Для получения поддержки отправьте письмо боту Телеграгм адресу [@emerix_support_bot](https://t.me/emerix_support_bot) или присоединяйтесь к нашему каналу [Emerix](https://t.me/emerix_org).
 
