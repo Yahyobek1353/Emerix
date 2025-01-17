@@ -7,12 +7,40 @@ body {
     color: #333;
 }
 
+/* Основные стили для шапки */
 header {
     background-color: #0056b3;
     color: white;
     padding: 20px 10px;
-    text-align: center;
+    position: relative; /* Для позиционирования кнопки */
 }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-button {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #0056b3;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #0056b3;
+}
+
+.account-button:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: underline;
+}
+
 
 main {
     padding: 20px;
