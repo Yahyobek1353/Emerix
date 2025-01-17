@@ -1,0 +1,55 @@
+{
+    "lang": [
+        { 
+            "name": "ru",
+            "hero_title": "Ваша безопасность – наш приоритет",
+            "hero_description": "Emerix помогает вам оставаться в безопасности в чрезвычайных ситуациях...",
+            "button_sos": "Отправить SOS",
+            "features_title": "Почему именно Emerix?",
+            "feature_quick_sos": "Быстрая помощь",
+            "feature_quick_sos_description": "Отправьте экстренное оповещение одним щелчком.",
+            "feature_contacts": "Экстренные контакты",
+            "feature_contacts_description": "Получите мгновенный доступ к важным номерам.",
+            "feature_reliable": "Надежность",
+            "feature_reliable_description": "Доступно 24/7 для вашего спокойствия.",
+            "footer_text": "&copy; 2025 Emerix. Оператор безопасности от Мээрим г.Ош by SALIEV"
+            
+        },
+        { 
+            "name": "kg",
+            "hero_title": "Сиздин коопсуздугуңуз - биздин артыкчылыгыбыз",
+            "hero_description": "Emerix сизди коопсуз абалда калтырууга жардам берет...",
+            "button_sos": "SOS жөнөтүү",
+            "features_title": "Эмне үчүн Emerix?",
+            "feature_quick_sos": "Ыкчам жардам",
+            "feature_quick_sos_description": "Бир басуу менен өзгөчө сигнал жөнөтүңүз.",
+            "feature_contacts": "Коопсуздук контакттары",
+            "feature_contacts_description": "Магаӊдуу номерлерге тез жетүү.",
+            "feature_reliable": "Ишенимдүүлүк",
+            "feature_reliable_description": "Сиздин тынчтыгыңыз үчүн күнү-түнү жеткиликтүү.",
+            "footer_text": "&copy; 2025 Emerix. Коопсуздук оператору Мээрим г.Ош by SALIEV"
+            
+        },
+        { 
+            "name": "en",
+            "hero_title": "Your safety is our priority",
+            "hero_description": "Emerix helps you stay safe during emergencies...",
+            "button_sos": "Send SOS",
+            "features_title": "Why Emerix?",
+            "feature_quick_sos": "Quick Help",
+            "feature_quick_sos_description": "Send an emergency alert with one click.",
+            "feature_contacts": "Emergency Contacts",
+            "feature_contacts_description": "Get instant access to important numbers.",
+            "feature_reliable": "Reliability",
+            "feature_reliable_description": "Available 24/7 for your peace of mind.",
+            "footer_text": "&copy; 2025 Emerix. Security operator by Meerim Osh by SALIEV"
+            
+        }
+    ],
+    "contact": [
+        { "name": "Милиция", "phone": "+996 312 123 456" },
+        { "name": "Скорая помощь", "phone": "+996 312 654 321" },
+        { "name": "Пожарная служба", "phone": "+996 312 111 222" },
+        { "name": "Министерство Чрезвычайных ситуации МЧС", "phone": "+996 312 654 321" }
+    ]
+}
