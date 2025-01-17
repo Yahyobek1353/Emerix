@@ -62,3 +62,8 @@
 ## 🔗 Ссылки
 [![Telegram](https://img.shields.io/badge/Telegram-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://t.me/salievyt)
 [![whatsapp](https://img.shields.io/badge/whatsapp-darc_green?style=for-the-badge&logo=twitter&logoColor=white)](https://api.whatsapp.com/send?phone=996990055445)
+
+## Support
+
+Для получения поддержки отправьте письмо боту Телеграгм адресу @emerix_support_bot или присоединяйтесь к нашему каналу [Emerix](https://t.me/emerix_org).
+
